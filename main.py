@@ -74,6 +74,5 @@ add_search_row()
 search_results = ui.row().classes('justify-between item-center w-full')
 
 ui.run(show=True, 
-    host='127.0.0.1',
     title="Where2Stream",
     favicon='📺')
