@@ -1,4 +1,4 @@
-# Where 2 Stream
+# Stream Search
 
 A website to allow you to find which streaming services a film / TV show are available on.
 
@@ -7,9 +7,9 @@ A website to allow you to find which streaming services a film / TV show are ava
 ### Installing
 
 * Get a free API key at https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability
-* Close the repo
+* Clone the repo
 ```
-git clone https://github.com/mickeyn94/where2stream.git
+git clone https://github.com/mickeyn94/stream_search.git
 ```
 * Install requirements
 ```
@@ -23,13 +23,6 @@ API_KEY = "INSERT KEY HERE"
 
 ```
 python main.py
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
 ```
 
 ## Authors
