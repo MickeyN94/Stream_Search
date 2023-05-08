@@ -57,21 +57,20 @@ def add_headers():
         .classes('max-w-[20rem] sm:max-w-[24rem] md:max-w-[30rem]')
 
 
-def add_search_row():
+@ui.page('/')
+async def index_page():
+    add_background()
+    add_headers()
+   # add_search_row()
     with ui.row().classes('justify-center item-center w-full'):
         search_field = ui.input().props('outlined v-model="text"; dense="dense"')
         search_field.tailwind.width('64').background_color('white')
         
         shows = ui.button('Search', on_click=lambda: search_for_shows(search_field.value, search_results))
         shows.tailwind.background_color('red').height('full').place_self('center')
+    # blank row initially to be populated once search begins
+    search_results = ui.row().classes('justify-between item-center w-full')
 
-
-add_background()
-add_headers()
-add_search_row()
-
-# blank row initially to be populated once search begins
-search_results = ui.row().classes('justify-between item-center w-full')
 
 ui.run(show=True, 
     title="Where2Stream",
